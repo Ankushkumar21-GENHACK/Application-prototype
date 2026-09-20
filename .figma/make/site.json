@@ -1,0 +1,10 @@
+{
+  "description": "Create interactive prototypes for web and mobile applications, enabling designers and developers to visualize ideas and streamline the development process.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

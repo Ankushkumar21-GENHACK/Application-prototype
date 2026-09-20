@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-default: var(--radius);
+}
+
+:root {
+  --background: #F7F5F0;
+  --foreground: #1C1917;
+  --card: #FFFFFF;
+  --card-foreground: #1C1917;
+  --primary: #E8620A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #1A7A5E;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F0EDE8;
+  --muted-foreground: #78716C;
+  --accent: #F59E0B;
+  --accent-foreground: #1C1917;
+  --border: #E7E5E0;
+  --ring: #E8620A;
+  --radius: 16px;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbars by default, show on hover/scroll */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: #D6D3CE;
+  border-radius: 4px;
+  opacity: 0;
+}
+:hover::-webkit-scrollbar-thumb { opacity: 1; }
+
+/* Smooth transitions for interactive elements */
+button, a, [role="button"] {
+  transition: all 0.15s ease;
+}
